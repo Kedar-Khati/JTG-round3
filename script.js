@@ -1,22 +1,16 @@
-
+const overlap = document.getElementById('overlap-video');
+const play = document.getElementById("play");
 const video = document.getElementById('myVideo');
-const playButton = document.getElementById('playButton');
 
-function togglePlay() {
-    if (video.paused) {
+function toggle(){
+    if(video.paused){
         video.play();
-    } else {
+        play.style.display = 'none';
+    }
+    else{
         video.pause();
+        play.style.display = 'block';
     }
 }
 
-video.addEventListener('pause', () => {
-    playButton.style.display = 'block';
-});
-
-video.addEventListener('play', () => {
-    playButton.style.display = 'none';
-});
-
-video.addEventListener('click', togglePlay);
-
+overlap.addEventListener('click',toggle);

@@ -98,6 +98,7 @@ img.social-img{
     background-position: center;
     padding-left: 5vw;
     padding-right: 5vw;
+    box-sizing: border-box;
     color: white;
     display: flex;
     flex-direction: column;
@@ -115,39 +116,89 @@ img.social-img{
 /*Hero end*/
 
 /*Feature*/
-.video-wrapper {
-    position: relative;
-    width: 100%;
-    max-width: 600px;
-    margin: auto;
+#Features{
+    display: flex;
+    flex-direction: column;
+    gap : 5rem;
 }
-  
+
+#feature-list{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap : 4rem;
+}
+
+.feature{
+    display : flex;
+    flex-direction: column;
+    text-align: center;
+    width: 13%;
+    gap: 1.3rem;
+}
+
+.feature h3{
+    font-size: 1.05rem;
+}
+
+#feature-list img{
+    display: block;
+    width: 3rem;
+    margin : 0 auto;
+}
+
+#Feature-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap : 1.1rem;
+    text-align: center;
+}
+#Feature-container span{
+    display: block;
+}
+#Feature-container h1{
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+#Feature-container h2{
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
 video{
-    width: 100%;
-    height: auto;
-    cursor: pointer;
+    width: 65%;
     display: block;
+    margin: 1rem auto;
+    border-radius: 40px; 
+    max-width: 100%;
+    /* overflow: hidden;     */
 }
-  
-.play-button {
+
+.video-wrapper{  
+    position: relative;
+}
+
+#overlap-video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    /* transform: translate(-50%, -50%); */
-    font-size: 60px;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.6);
-    border-radius: 50%;
-    padding: 20px;
-    cursor: pointer;
-    display: none; 
-    pointer-events: none;
+    top : 50%;
+    left : 50%;
+    transform: translate(-50%,-50%);
+    width: 60%;
+    height: 60%;
 }
-.video-wrapper video{
-    height: 77vh;
-    width: 60vw;
-    display: block;
+
+#overlap-video img{
+    width: 7rem;
+    opacity: 0.7;
 }
   
 /*Feature end*/
 
+/* Mac */
+
+/* Mac end */
